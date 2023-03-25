@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SAAS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+.sidebar {
+height: 100%;
+width: 200px;
+position: fixed;
+top: 0;
+left: 0;
+background-color: #f5f5f5;
+padding-top: 15px;
+}
+.content {
+margin-left: 200px;
+padding: 15px;
+}
+.logout-btn {
+position: absolute;
+top: 15px;
+right: 15px;
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+<ul class="nav flex-column">
+<li class="nav-item">
+<a class="nav-link active" href="">Dashboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="">Reports</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="">Settings</a>
+</li>
+</ul>
+</div>
+<!-- <button class="btn btn-danger logout-btn" href='login/'>Logout</button> -->
+    <a href="{% url 'login' %}" class="btn btn-danger logout-btn">
+        Logout
+    </a>
+<div class="content">
+<h1>SAAS Product</h1>
+        <br><br>
+<p>Welcome to your dashboard!</p>
+<p>Here's where you can see all your important information and stats.</p>
+</div>
+</body>
+</html>
